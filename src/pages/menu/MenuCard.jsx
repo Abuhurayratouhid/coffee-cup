@@ -3,7 +3,7 @@ import Button from '@mui/material/Button';
 
 
 const MenuCard = ({menu}) => {
-    const {title, subTitle, pic, price} = menu;
+    const {title, subTitle, picture, price} = menu;
     return (
         <>
             <Box sx={{
@@ -26,18 +26,18 @@ const MenuCard = ({menu}) => {
                         height: '100%',
                         borderRadius:'50%'
                     }} 
-                    src={pic} alt="Coffee" />
+                    src={picture} alt="Coffee" />
                 </Box>
                 <Box
                     sx={{ width: '70%',  height: '100%', marginLeft: '1rem' }}
                 >
                     <Typography>{title}</Typography>
                     <Typography>{price}</Typography>
-                    <Typography>{subTitle}</Typography>
+                    <Typography>{subTitle.slice(0,32)}</Typography>
                     <Box sx={{
                         display: 'flex',
                         justifyContent: 'end',
-                        paddingTop: '.5rem'
+                        paddingTop: '5px'
                     }}>
                         <Button variant="contained" size="small">
                             Order now

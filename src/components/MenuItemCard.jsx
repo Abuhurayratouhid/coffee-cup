@@ -3,7 +3,7 @@ import { Box} from '@mui/material';
 import coffee from '../assets/img/coffee-banner.png'
 
 export default function MenuItemCard({menu}) {
-    const {title, subTitle, pic, price} = menu;
+    const {title, subTitle, picture, price} = menu;
   return (
     <>
     <Box sx={{
@@ -21,7 +21,7 @@ export default function MenuItemCard({menu}) {
             width: '100%',
             height: '50%'
         }}
-        src={pic} alt="coffee" />
+        src={picture} alt="coffee" />
         <Typography variant='h5'>{title}</Typography>
         <Typography variant='h6' color='primary' style={{paddingTop: '0.5rem', paddingBottom: '1rem'}}>{price}</Typography>
         <Typography>{subTitle}</Typography>
